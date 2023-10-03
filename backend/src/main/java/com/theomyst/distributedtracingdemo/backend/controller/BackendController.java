@@ -1,21 +1,25 @@
 package com.theomyst.distributedtracingdemo.backend.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Slf4j
 @RestController
 @RequestMapping("/backend")
 public class BackendController {
 
     @GetMapping("/hello")
     public ResponseEntity<String> getHello() {
+        log.info("Backend - getHello invoked!");
         return ResponseEntity.ok("Hello");
     }
 
     @GetMapping("/world")
     public ResponseEntity<String> getWorld() {
+        log.info("Backend - getWorld invoked!");
         return ResponseEntity.ok("World");
     }
 
