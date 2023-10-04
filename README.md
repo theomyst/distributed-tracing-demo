@@ -2,7 +2,7 @@
 This is a demo project showcasing distributed tracing of multiple Spring Boot services using the Spring Cloud Sleuth library and Zipkin.
 Sleuth handles trace data and generates TraceIds and SpanIds for logs.
 Zipkin is an open source distributed tracking system, to which Sleuth sends trace data over http. 
-To quickly setup zipkin with docker, use the command: 
+To quickly setup zipkin with docker (defaults at http://localhost:9411), use the command: 
 
 **docker run -d -p 9411:9411 openzipkin/zipkin**
 
