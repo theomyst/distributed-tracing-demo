@@ -1,2 +1,5 @@
 server:
   port: 8081
+spring:
+  application:
+    name: frontend  # Set this property to see the service name as well in the sleuth trace logs
